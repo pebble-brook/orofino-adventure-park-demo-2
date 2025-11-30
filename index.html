@@ -13,7 +13,7 @@
 <body>
   <!-- Header -->
   <header id="top"
-  class="fixed inset-x-0 top-0 z-20 text-white transition-all duration-200">
+  class="site-header fixed inset-x-0 top-0 z-20 text-white transition-all duration-200">
   <div class="mx-auto w-full max-w-[1120px] px-5 flex items-center justify-between py-3">
 
     <!-- Logo / Brand -->
@@ -21,8 +21,7 @@
       <img
         src="assets/images/OrofinoAdventureParkLogo_Revised.png"
         alt="Orofino Adventure Park logo"
-        class="h-[72px] w-auto rounded-xl shadow-[0_4px_12px_rgba(0,0,0,0.25)] transition-all duration-200"
-      />
+        class="h-[72px] w-auto rounded-xl shadow-[0_4px_12px_rgba(0,0,0,0.25)] transition-all duration-200"/>
     </a>
 
     <!-- Nav items -->
@@ -35,7 +34,7 @@
     </nav>
 
   </div>
-</header>
+  </header>
 
   <!-- Hero -->
   <main id="top">
@@ -111,45 +110,114 @@
 
     <!-- Activities Section -->
     <section class="section activities" id="activities">
-      <div class="container">
-        <header class="section-header">
-          <img src="assets/images/OrofinoAdventureParkLogo_Revised.png" alt="Orofino Adventure Park Logo" class="section-header-image"></img>
-          <h2>Adventure Awaits</h2>
-          <p>
+      <div class="mx-auto w-full max-w-[1120px] px-5">
+        <header class="text-center mx-auto max-w-[640px] mb-10">
+          <img
+            src="assets/images/OrofinoAdventureParkLogo_Revised.png"
+            alt="Orofino Adventure Park Logo"
+            class="mx-auto mb-5 block w-[300px] drop-shadow-[0_10px_12px_rgba(0,0,0,0.35)]"
+          />
+          <h2 class="text-2xl mb-1 text-[var(--ink-2)]">
+            Adventure Awaits
+          </h2>
+          <p class="text-[0.98rem] text-[var(--muted)]">
             From adrenaline-pumping activities to peaceful nature walks,
             we offer something for every outdoor enthusiast.
           </p>
         </header>
 
-        <div class="activity-grid">
+        <div class="grid gap-7 grid-cols-[repeat(auto-fit,minmax(260px,1fr))]">
           <!-- Disc Golf -->
-          <article class="activity-card">
-            <figure class="card-image">
-              <img src="assets/images/disc-golfer.avif" alt="Disc golfer throwing in the forest">
-              <figcaption class="card-label">
-                <span class="card-icon">◎</span>
-                <span class="card-title">Disc Golf</span>
+          <article class="flex flex-col overflow-hidden rounded-[26px] bg-white shadow-[0_14px_35px_rgba(0,0,0,0.08)]">
+            <figure class="relative m-0 leading-[0]">
+              <img
+                src="assets/images/disc-golfer.avif"
+                alt="Disc golfer throwing in the forest"
+                class="block h-[220px] w-full object-cover"
+              />
+              <figcaption
+                class="absolute inset-x-6 bottom-5 inline-flex items-center gap-2.5 rounded-full bg-black/55 px-3 py-1.5 text-[0.9rem] text-white"
+              >
+                <span
+                  class="inline-flex h-[26px] w-[26px] items-center justify-center rounded-full bg-[#2f6b3f] text-[0.85rem]"
+                >
+                  ◎
+                </span>
+                <span class="font-semibold">Disc Golf</span>
               </figcaption>
             </figure>
-            <div class="card-body">
-              <p>
+            <div class="px-6 pb-6 pt-5">
+              <p class="m-0 text-[0.98rem] leading-relaxed text-[var(--ink-2)]">
                 Challenge yourself on our professionally designed 18-hole disc
                 golf course winding through beautiful forest terrain.
               </p>
             </div>
           </article>
 
-          <!-- White Water Rafting -->
-          <article class="activity-card">
-            <figure class="card-image">
-              <img src="assets/images/rafting.avif" alt="Group white water rafting on a river">
-              <figcaption class="card-label">
-                <span class="card-icon">≈</span>
-                <span class="card-title">White Water Rafting</span>
+          <!-- Zipline -->
+          <article class="flex flex-col overflow-hidden rounded-[26px] bg-white shadow-[0_14px_35px_rgba(0,0,0,0.08)]">
+            <figure class="relative m-0 leading-[0]">
+              <img
+                src="assets/images/zipline.avif"
+                alt="Zipline over the forest"
+                class="block h-[220px] w-full object-cover"/>
+              <figcaption
+                class="absolute inset-x-6 bottom-5 inline-flex items-center gap-2.5 rounded-full bg-black/55 px-3 py-1.5 text-[0.9rem] text-white">
+                <span
+                  class="inline-flex h-[26px] w-[26px] items-center justify-center rounded-full bg-[#2f6b3f] text-[0.85rem]">
+                  ↯
+                </span>
+                <span class="font-semibold">Zipline</span>
               </figcaption>
             </figure>
-            <div class="card-body">
-              <p>
+            <div class="px-6 pb-6 pt-5">
+              <p class="m-0 text-[0.98rem] leading-relaxed text-[var(--ink-2)]">
+                Enjoy the sceneray as you soar high above the treetops on our thrilling zipline course, taking in breathtaking river and mountain views along the way.
+              </p>
+            </div>
+          </article>
+
+          <!-- Rope course -->
+          <article class="flex flex-col overflow-hidden rounded-[26px] bg-white shadow-[0_14px_35px_rgba(0,0,0,0.08)]">
+            <figure class="relative m-0 leading-[0]">
+              <img
+                src="assets/images/rope-course.avif"
+                alt="Rope course over the forest"
+                class="block h-[220px] w-full object-cover"/>
+              <figcaption
+                class="absolute inset-x-6 bottom-5 inline-flex items-center gap-2.5 rounded-full bg-black/55 px-3 py-1.5 text-[0.9rem] text-white">
+                <span
+                  class="inline-flex h-[26px] w-[26px] items-center justify-center rounded-full bg-[#2f6b3f] text-[0.85rem]">
+                  ⭓
+                </span>
+                <span class="font-semibold">Rope Course</span>
+              </figcaption>
+            </figure>
+            <div class="px-6 pb-6 pt-5">
+              <p class="m-0 text-[0.98rem] leading-relaxed text-[var(--ink-2)]">
+                Test your balance, strength, and teamwork on our rope challenge course featuring suspended bridges, swinging elements, and high-elevation obstacles.
+              </p>
+            </div>
+          </article>
+
+          <!-- White Water Rafting -->
+          <article class="flex flex-col overflow-hidden rounded-[26px] bg-white shadow-[0_14px_35px_rgba(0,0,0,0.08)]">
+            <figure class="relative m-0 leading-[0]">
+              <img
+                src="assets/images/rafting.avif"
+                alt="Group white water rafting on a river"
+                class="block h-[220px] w-full object-cover"/>
+              <figcaption
+                class="absolute inset-x-6 bottom-5 inline-flex items-center gap-2.5 rounded-full bg-black/55 px-3 py-1.5 text-[0.9rem] text-white">
+                <span
+                  class="inline-flex h-[26px] w-[26px] items-center justify-center rounded-full bg-[#2f6b3f] text-[0.85rem]">
+                  ≈
+                </span>
+                <span class="font-semibold">White Water Rafting</span>
+              </figcaption>
+            </figure>
+            <div class="px-6 pb-6 pt-5">
+              <p class="m-0 text-[0.98rem] leading-relaxed text-[var(--ink-2)]">
                 Experience the rush of navigating thrilling rapids with our
                 expert guides on the pristine Clearwater River.
               </p>
@@ -157,16 +225,23 @@
           </article>
 
           <!-- Mountain Biking -->
-          <article class="activity-card">
-            <figure class="card-image">
-              <img src="assets/images/biking.avif" alt="Mountain biker riding forest singletrack">
-              <figcaption class="card-label">
-                <span class="card-icon">🚵</span>
-                <span class="card-title">Mountain Biking</span>
+          <article class="flex flex-col overflow-hidden rounded-[26px] bg-white shadow-[0_14px_35px_rgba(0,0,0,0.08)]">
+            <figure class="relative m-0 leading-[0]">
+              <img
+                src="assets/images/biking.avif"
+                alt="Mountain biker riding forest singletrack"
+                class="block h-[220px] w-full object-cover"/>
+              <figcaption
+                class="absolute inset-x-6 bottom-5 inline-flex items-center gap-2.5 rounded-full bg-black/55 px-3 py-1.5 text-[0.9rem] text-white">
+                <span
+                  class="inline-flex h-[26px] w-[26px] items-center justify-center rounded-full bg-[#2f6b3f] text-[0.85rem]">
+                  🚵
+                </span>
+                <span class="font-semibold">Mountain Biking</span>
               </figcaption>
             </figure>
-            <div class="card-body">
-              <p>
+            <div class="px-6 pb-6 pt-5">
+              <p class="m-0 text-[0.98rem] leading-relaxed text-[var(--ink-2)]">
                 Ride miles of purpose-built singletrack through mossy forests,
                 rolling ridgelines, and stunning river overlooks.
               </p>
@@ -174,16 +249,23 @@
           </article>
 
           <!-- Hiking -->
-          <article class="activity-card">
-            <figure class="card-image">
-              <img src="assets/images/hiking.avif" alt="Hiker overlooking mountains at sunset">
-              <figcaption class="card-label">
-                <span class="card-icon">🥾</span>
-                <span class="card-title">Hiking & Nature Walks</span>
+          <article class="flex flex-col overflow-hidden rounded-[26px] bg-white shadow-[0_14px_35px_rgba(0,0,0,0.08)]">
+            <figure class="relative m-0 leading-[0]">
+              <img
+                src="assets/images/hiking.avif"
+                alt="Hiker overlooking mountains at sunset"
+                class="block h-[220px] w-full object-cover"/>
+              <figcaption
+                class="absolute inset-x-6 bottom-5 inline-flex items-center gap-2.5 rounded-full bg-black/55 px-3 py-1.5 text-[0.9rem] text-white">
+                <span
+                  class="inline-flex h-[26px] w-[26px] items-center justify-center rounded-full bg-[#2f6b3f] text-[0.85rem]">
+                  🥾
+                </span>
+                <span class="font-semibold">Hiking &amp; Nature Walks</span>
               </figcaption>
             </figure>
-            <div class="card-body">
-              <p>
+            <div class="px-6 pb-6 pt-5">
+              <p class="m-0 text-[0.98rem] leading-relaxed text-[var(--ink-2)]">
                 Slow down and explore scenic trails, waterfalls, and peaceful
                 forest paths perfect for families and casual hikers.
               </p>
@@ -192,6 +274,7 @@
         </div>
       </div>
     </section>
+
 
     <!-- Simple placeholder sections for the nav links -->
     <section class="section" id="plan">

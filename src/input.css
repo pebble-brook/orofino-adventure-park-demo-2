@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-header {
+.site-header {
   background: linear-gradient(
     to bottom,
     rgba(15, 26, 19, 0.95),
@@ -117,7 +117,6 @@ body {
   background: rgba(255, 255, 255, 0.1);
 }
 
-
 .dot {
   width: 9px;
   height: 9px;
@@ -132,17 +131,6 @@ body {
   opacity: 1;
 }
 
-
-
-.section-header-image{
-  display: block;
-  margin: 0 auto;
-  margin-bottom: 20px;
-  width: 300px;          /* whatever size you want */
-  filter: drop-shadow(0 10px 12px rgba(0,0,0,0.35));
-
-}
-
 /* Sections */
 .section {
   padding-block: 4rem;
@@ -154,92 +142,6 @@ body {
 
 .section:nth-of-type(even) {
   background: #f0ece4;
-}
-
-.section-header {
-  text-align: center;
-  max-width: 640px;
-  margin: 0 auto 2.5rem;
-}
-
-.section-header h2 {
-  font-size: 2rem;
-  margin-bottom: 0.25rem;
-  color: var(--ink-2);
-}
-
-.section-header p {
-  color: var(--muted);
-  font-size: 0.98rem;
-}
-
-/* Activity cards */
-.activity-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 1.75rem;
-}
-
-.activity-card {
-  background: #ffffff;
-  border-radius: var(--radius-lg);
-  overflow: hidden;
-  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.08);
-  display: flex;
-  flex-direction: column;
-}
-
-.card-image {
-  position: relative;
-  margin: 0;
-  line-height: 0;
-}
-
-.card-image img {
-  display: block;
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
-}
-
-.card-label {
-  position: absolute;
-  inset-inline: 1.5rem;
-  bottom: 1.25rem;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.6rem;
-  padding: 0.45rem 0.75rem;
-  border-radius: 999px;
-  background: rgba(0, 0, 0, 0.55);
-  color: #ffffff;
-  font-size: 0.9rem;
-}
-
-.card-icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 26px;
-  height: 26px;
-  border-radius: 999px;
-  background: #2f6b3f;
-  font-size: 0.85rem;
-}
-
-.card-title {
-  font-weight: 600;
-}
-
-.card-body {
-  padding: 1.25rem 1.5rem 1.5rem;
-}
-
-.card-body p {
-  margin: 0;
-  color: var(--ink-2);
-  font-size: 0.98rem;
-  line-height: 1.5;
 }
 
 /* Footer */
