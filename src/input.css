@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+/* Your custom global styles */
+body {
+  min-height: 100vh;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell,
+    "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  color: #111827; /* slate-900-ish */
+  background:
+    radial-gradient(1500px 500px at 50% -300px, #cfe7d9 0%, transparent 70%),
+    repeating-linear-gradient(0deg, #f7f4ef, #f7f4ef 8px, #f4f0ea 8px, #f4f0ea 9px);
+  background-attachment: fixed;
+  line-height: 1.5;
+}
