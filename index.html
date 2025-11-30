@@ -12,23 +12,31 @@
 </head>
 <body>
   <!-- Header -->
-    <!-- Header / Nav -->
-  <header class="site-header">
-    <div class="container header-inner">
-      <a href="#top" class="brand">
-        <img src="assets/images/OrofinoAdventureParkLogo_Revised.png" alt="Orofino Adventure Park logo" class="brand-logo">
-        <span class="brand-text"></span>
-      </a>
+  <header id="top"
+  class="fixed inset-x-0 top-0 z-20 text-white transition-all duration-200">
+  <div class="mx-auto w-full max-w-[1120px] px-5 flex items-center justify-between py-3">
 
-      <nav class="nav" aria-label="Primary">
-        <ul class="nav-list">
-          <li><a href="#activities">Activities</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+    <!-- Logo / Brand -->
+    <a href="#top" class="flex items-center gap-2">
+      <img
+        src="assets/images/OrofinoAdventureParkLogo_Revised.png"
+        alt="Orofino Adventure Park logo"
+        class="h-[72px] w-auto rounded-xl shadow-[0_4px_12px_rgba(0,0,0,0.25)] transition-all duration-200"
+      />
+    </a>
+
+    <!-- Nav items -->
+    <nav aria-label="Primary">
+      <ul class="flex gap-7 text-[0.95rem] font-medium">
+        <li><a href="#activities" class="relative hover:after:w-full after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-amber-400 after:transition-all">Activities</a></li>
+        <li><a href="#about" class="relative hover:after:w-full after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-amber-400 after:transition-all">About</a></li>
+        <li><a href="#contact" class="relative hover:after:w-full after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-amber-400 after:transition-all">Contact</a></li>
+      </ul>
+    </nav>
+
+  </div>
+</header>
+
 
   <!-- Hero -->
   <main id="top">
@@ -200,6 +208,7 @@
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
   <script src="./js/hero-rotator.js"></script>
+  <script src="./js/scroll.js"></script>
 
 </body>
 
