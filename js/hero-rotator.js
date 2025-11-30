@@ -1,8 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
   const hero = document.getElementById("hero");
   const dotsContainer = document.getElementById("heroDots");
-  const btnPrev = document.querySelector(".hero-arrow-left");
-  const btnNext = document.querySelector(".hero-arrow-right");
+  const btnPrev = document.querySelector("[data-hero-arrow='prev']");
+  const btnNext = document.querySelector("[data-hero-arrow='next']");
+
 
   if (!hero) return;
 
@@ -37,13 +38,20 @@ document.addEventListener("DOMContentLoaded", () => {
   let isPaused = false;
   let timerId = null;
 
-  // --- Create dots ---
+  // --- Create dots (with Tailwind classes) ---
   images.forEach((_, i) => {
     const dot = document.createElement("span");
     dot.dataset.index = i;
+
+    // Tailwind classes for default (inactive) state
+    dot.className =
+      "inline-block h-2.5 w-2.5 rounded-full border border-white/80 " +
+      "opacity-60 cursor-pointer transition-opacity duration-200";
+
     dot.addEventListener("click", () => {
       goToSlide(i, true);
     });
+
     dotsContainer.appendChild(dot);
   });
 
@@ -54,9 +62,16 @@ document.addEventListener("DOMContentLoaded", () => {
   function render() {
     hero.style.backgroundImage = `url(${images[currentIndex]})`;
 
-    dots.forEach(dot => dot.classList.remove("active"));
+    // Reset all dots to inactive
+    dots.forEach(dot => {
+      dot.classList.remove("bg-white", "opacity-100");
+      dot.classList.add("opacity-60");
+    });
+
+    // Highlight active dot
     if (dots[currentIndex]) {
-      dots[currentIndex].classList.add("active");
+      dots[currentIndex].classList.add("bg-white", "opacity-100");
+      dots[currentIndex].classList.remove("opacity-60");
     }
   }
 
@@ -110,6 +125,4 @@ document.addEventListener("DOMContentLoaded", () => {
   // --- Init slideshow ---
   render();
   startTimer();
-
 });
-
