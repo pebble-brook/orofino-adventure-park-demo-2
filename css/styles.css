@@ -229,24 +229,6 @@
   .z-\[1\] {
     z-index: 1;
   }
-  .container {
-    width: 100%;
-    @media (width >= 40rem) {
-      max-width: 40rem;
-    }
-    @media (width >= 48rem) {
-      max-width: 48rem;
-    }
-    @media (width >= 64rem) {
-      max-width: 64rem;
-    }
-    @media (width >= 80rem) {
-      max-width: 80rem;
-    }
-    @media (width >= 96rem) {
-      max-width: 96rem;
-    }
-  }
   .m-0 {
     margin: calc(var(--spacing) * 0);
   }
@@ -923,6 +905,7 @@ header.header--scrolled img {
 html, body {
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -1045,6 +1028,11 @@ body {
   background: rgba(0,0,0,0.65);
 }
 @layer components {
+  .hero-title {
+    font-family: "Antonio", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    letter-spacing: 0.04em;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.55), 0 4px 12px rgba(0,0,0,0.35);
+  }
   .nav-top-level {
     position: relative;
     &::after {

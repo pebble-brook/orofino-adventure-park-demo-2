@@ -72,6 +72,7 @@ header.header--scrolled img {
 html, body {
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -228,6 +229,16 @@ body {
 }
 
 @layer components {
+  .hero-title {
+    font-family: "Antonio", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    letter-spacing: 0.04em; 
+    text-shadow: 
+      0 2px 4px rgba(0,0,0,0.55),
+      0 4px 12px rgba(0,0,0,0.35);
+
+
+  }
+
   .nav-top-level {
     @apply relative hover:after:w-full after:absolute 
            after:left-0 after:-bottom-1 after:h-0.5 after:w-0 
